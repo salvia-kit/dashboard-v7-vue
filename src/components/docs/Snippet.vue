@@ -17,20 +17,13 @@
   </pre>
 </template>
 
-<script>
-export default {
-  name: 'Snippet',
-  setup() {
-    const snippets = `<sidenav-items-section name="Applications">
-      <sidenav-item title="Users" to="/">
-        <users-icon />
-      </sidenav-item>
-      <sidenav-item title="Medias" to="/admin/medias">
-        <medias-icon />
-      </sidenav-item>
-    </sidenav-items-section>`;
-
-    return { snippets };
-  },
-};
+<script setup>
+const snippets = `<sidenav-items-section name="Applications">
+  <sidenav-item title="Users" to="/">
+    <users-icon />
+  </sidenav-item>
+  <sidenav-item title="Medias" to="/admin/medias">
+    <medias-icon />
+  </sidenav-item>
+</sidenav-items-section>`;
 </script>
